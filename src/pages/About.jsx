@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Heart, Shield, Users, BookOpen, Target, Eye, AlertCircle } from 'lucide-react';
+import { Heart, Shield, Users, BookOpen, Target, Eye, AlertCircle, Sparkles, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function About() {
@@ -10,66 +10,53 @@ export default function About() {
   const content = {
     english: {
       hero: {
-        title: "About Nari Suraksha Saathi",
-        tagline: "Empowering Women Through Technology & Awareness"
+        subtitle: "EMPOWERING WOMEN",
+        title: "Safety & Support for the Empowered Woman",
+        tagline: "Your Journey to Safety",
+        cta: "Learn More"
       },
-      intro: {
-        title: "A Companion for Safety & Dignity",
-        text: "Nari Suraksha Saathi (Women's Safety Companion) is a small yet powerful step toward empowering women — especially those in India's informal sector — with awareness, confidence, and access to help when they need it most. Every woman deserves to feel safe, heard, and informed. Unfortunately, many incidents of harassment and unsafe behavior go unreported due to fear, lack of support, or not knowing what to do next. Our mission is to bridge this gap with a simple, mobile-friendly tool that provides clear guidance, support connections, and a sense of protection — all in one place."
+      elevate: {
+        title: "Elevate Your Safety"
       },
-      purpose: {
-        title: "Our Purpose",
-        subtitle: "Why We Built This Platform",
-        points: [
-          "Help women understand their legal rights under the POSH Act (Prevention of Sexual Harassment at Workplace, 2013) in easy, everyday language.",
-          "Provide discreet reporting simulation to show how one can share their experience safely and confidentially — without fear or exposure.",
-          "Offer reliable information and contacts of NGOs, legal aid groups, and women's organizations that support those facing harassment or workplace abuse.",
-          "Share practical safety tips for everyday life — especially for women working in homes, markets, factories, and informal environments."
-        ]
+      welcome: {
+        title: "Welcome",
+        subtitle: "I'm Nari Suraksha Saathi",
+        text: "Every woman deserves to feel safe, heard, and informed. Unfortunately, many incidents of harassment and unsafe behavior go unreported due to fear, lack of support, or not knowing what to do next. We bridge this gap with a simple, mobile-friendly tool that provides clear guidance, support connections, and a sense of protection — all in one place."
       },
-      help: {
-        title: "How We Aim to Help",
-        subtitle: "Our goal is not only to create an app — but to create a sense of trust and empowerment",
+      mission: {
+        title: "What We Do",
+        subtitle: "Our Mission & Purpose",
         items: [
           {
-            icon: "🗣️",
-            title: "Encourage Speaking Up",
-            description: "Help women recognize what harassment looks like and encourage them to speak up without fear."
+            title: "Know Your Rights",
+            text: "Understanding legal rights under POSH Act in easy, everyday language for every woman."
           },
           {
-            icon: "📞",
-            title: "Easy Access to Help",
-            description: "Provide quick access to verified support centers via simulated 'Call' and 'WhatsApp' links."
+            title: "Report Safely",
+            text: "Discreet reporting simulation showing how to share experiences safely and confidentially."
           },
           {
-            icon: "📚",
-            title: "Spread Awareness",
-            description: "Share information about basic labor rights, safety measures, and self-protection strategies."
+            title: "Find Support",
+            text: "Reliable contacts of NGOs, legal aid groups, and women's organizations for immediate help."
           },
           {
-            icon: "💻",
-            title: "Build Digital Confidence",
-            description: "Keep everything clear, visual, and accessible for women with minimal tech exposure."
+            title: "Stay Protected",
+            text: "Practical safety tips for everyday life especially for women in informal work sectors."
           }
         ]
       },
-      matters: {
-        title: "Why It Matters",
-        text: "Many women in India's informal sector — such as domestic workers, daily wage earners, or helpers — lack the awareness or resources to understand their rights or report unsafe conditions. We believe technology can be a companion, not a barrier. Even a simple, offline-friendly web app can show what safety and awareness tools could look like, paving the way for larger, real-world solutions."
-      },
       vision: {
         title: "Our Vision",
-        subtitle: "A society where every woman is safe, heard, and empowered",
         points: [
           "Every woman knows her rights",
           "No one stays silent out of fear",
-          "Safety and dignity at work are seen as basic human rights, not privileges"
+          "Safety and dignity at work are basic rights"
         ],
         closing: "Nari Suraksha Saathi is our small step toward that vision — combining compassion, simplicity, and technology to make a meaningful impact."
       },
       disclaimer: {
-        title: "Disclaimer",
-        text: "This platform is a prototype (MVP) created to demonstrate the concept of discreet reporting and legal awareness. All data, forms, and contacts shown are simulated for educational purposes only. No actual reports are stored, shared, or transmitted. Our intention is purely to educate, inspire, and empower."
+        title: "Important Note",
+        text: "This platform is a prototype created to demonstrate discreet reporting and legal awareness. All data shown is simulated for educational purposes only. No actual reports are stored or transmitted."
       },
       botMessages: [
         "Hello! I'm here to help you navigate this platform safely.",
@@ -81,66 +68,53 @@ export default function About() {
     },
     hindi: {
       hero: {
-        title: "नारी सुरक्षा साथी के बारे में",
-        tagline: "प्रौद्योगिकी और जागरूकता के माध्यम से महिलाओं को सशक्त बनाना"
+        subtitle: "महिलाओं को सशक्त बनाना",
+        title: "सशक्त महिला के लिए सुरक्षा और समर्थन",
+        tagline: "सुरक्षा की ओर आपकी यात्रा",
+        cta: "और जानें"
       },
-      intro: {
-        title: "सुरक्षा और सम्मान के लिए एक साथी",
-        text: "नारी सुरक्षा साथी महिलाओं को सशक्त बनाने की दिशा में एक छोटा लेकिन शक्तिशाली कदम है - विशेष रूप से भारत के अनौपचारिक क्षेत्र में काम करने वाली महिलाओं को जागरूकता, आत्मविश्वास और मदद तक पहुंच प्रदान करना। हर महिला सुरक्षित, सुनी हुई और सूचित महसूस करने की हकदार है। दुर्भाग्य से, कई उत्पीड़न की घटनाएं डर, समर्थन की कमी या आगे क्या करना है यह न जानने के कारण रिपोर्ट नहीं की जाती हैं। हमारा मिशन एक सरल, मोबाइल-फ्रेंडली टूल के साथ इस अंतर को पाटना है जो स्पष्ट मार्गदर्शन, समर्थन कनेक्शन और सुरक्षा की भावना प्रदान करता है।"
+      elevate: {
+        title: "अपनी सुरक्षा को बढ़ाएं"
       },
-      purpose: {
-        title: "हमारा उद्देश्य",
-        subtitle: "हमने यह प्लेटफ़ॉर्म क्यों बनाया",
-        points: [
-          "महिलाओं को पोश अधिनियम के तहत उनके कानूनी अधिकारों को सरल, रोजमर्रा की भाषा में समझने में मदद करना।",
-          "गोपनीय रिपोर्टिंग सिमुलेशन प्रदान करना ताकि दिखाया जा सके कि कोई अपने अनुभव को सुरक्षित और गोपनीय रूप से कैसे साझा कर सकता है।",
-          "एनजीओ, कानूनी सहायता समूहों और महिला संगठनों की विश्वसनीय जानकारी और संपर्क प्रदान करना।",
-          "रोजमर्रा की जिंदगी के लिए व्यावहारिक सुरक्षा युक्तियां साझा करना - विशेष रूप से घरों, बाजारों, कारखानों में काम करने वाली महिलाओं के लिए।"
-        ]
+      welcome: {
+        title: "स्वागत है",
+        subtitle: "मैं नारी सुरक्षा साथी हूं",
+        text: "हर महिला सुरक्षित, सुनी हुई और सूचित महसूस करने की हकदार है। दुर्भाग्य से, कई उत्पीड़न की घटनाएं डर, समर्थन की कमी या आगे क्या करना है यह न जानने के कारण रिपोर्ट नहीं की जाती हैं। हम एक सरल, मोबाइल-फ्रेंडली टूल के साथ इस अंतर को पाटते हैं जो स्पष्ट मार्गदर्शन, समर्थन कनेक्शन और सुरक्षा की भावना प्रदान करता है।"
       },
-      help: {
-        title: "हम कैसे मदद करना चाहते हैं",
-        subtitle: "हमारा लक्ष्य केवल एक ऐप बनाना नहीं है - बल्कि विश्वास और सशक्तिकरण की भावना पैदा करना है",
+      mission: {
+        title: "हम क्या करते हैं",
+        subtitle: "हमारा मिशन और उद्देश्य",
         items: [
           {
-            icon: "🗣️",
-            title: "बोलने के लिए प्रोत्साहित करें",
-            description: "महिलाओं को यह पहचानने में मदद करें कि उत्पीड़न क्या दिखता है और उन्हें डर के बिना बोलने के लिए प्रोत्साहित करें।"
+            title: "अपने अधिकार जानें",
+            text: "हर महिला के लिए पोश अधिनियम के तहत कानूनी अधिकारों को सरल भाषा में समझना।"
           },
           {
-            icon: "📞",
-            title: "मदद तक आसान पहुंच",
-            description: "सिमुलेटेड 'कॉल' और 'व्हाट्सएप' लिंक के माध्यम से सत्यापित सहायता केंद्रों तक त्वरित पहुंच प्रदान करें।"
+            title: "सुरक्षित रिपोर्ट करें",
+            text: "गोपनीय रिपोर्टिंग सिमुलेशन जो दिखाता है कि अनुभवों को सुरक्षित रूप से कैसे साझा करें।"
           },
           {
-            icon: "📚",
-            title: "जागरूकता फैलाएं",
-            description: "बुनियादी श्रम अधिकारों, सुरक्षा उपायों और आत्म-सुरक्षा रणनीतियों के बारे में जानकारी साझा करें।"
+            title: "समर्थन खोजें",
+            text: "तत्काल मदद के लिए एनजीओ, कानूनी सहायता समूहों और महिला संगठनों के विश्वसनीय संपर्क।"
           },
           {
-            icon: "💻",
-            title: "डिजिटल आत्मविश्वास बनाएं",
-            description: "न्यूनतम तकनीकी जोखिम वाली महिलाओं के लिए सब कुछ स्पष्ट, दृश्य और सुलभ रखें।"
+            title: "सुरक्षित रहें",
+            text: "विशेष रूप से अनौपचारिक कार्य क्षेत्रों में महिलाओं के लिए रोजमर्रा की जिंदगी के लिए व्यावहारिक सुरक्षा युक्तियां।"
           }
         ]
       },
-      matters: {
-        title: "यह क्यों महत्वपूर्ण है",
-        text: "भारत के अनौपचारिक क्षेत्र में कई महिलाएं - जैसे घरेलू कामगार, दिहाड़ी मजदूर - अपने अधिकारों को समझने या असुरक्षित परिस्थितियों की रिपोर्ट करने के लिए जागरूकता या संसाधनों की कमी रखती हैं। हम मानते हैं कि प्रौद्योगिकी एक साथी हो सकती है, बाधा नहीं। यहां तक कि एक सरल, ऑफ़लाइन-फ्रेंडली वेब ऐप भी दिखा सकता है कि सुरक्षा और जागरूकता उपकरण कैसे दिख सकते हैं।"
-      },
       vision: {
         title: "हमारी दृष्टि",
-        subtitle: "एक ऐसा समाज जहाँ हर महिला सुरक्षित, सुनी हुई और सशक्त हो",
         points: [
           "हर महिला अपने अधिकारों को जानती है",
           "कोई भी डर से चुप नहीं रहता",
-          "काम पर सुरक्षा और सम्मान को बुनियादी मानव अधिकार के रूप में देखा जाता है, विशेषाधिकार के रूप में नहीं"
+          "काम पर सुरक्षा और सम्मान बुनियादी अधिकार हैं"
         ],
         closing: "नारी सुरक्षा साथी उस दृष्टि की ओर हमारा छोटा कदम है - करुणा, सरलता और प्रौद्योगिकी को मिलाकर एक सार्थक प्रभाव बनाना।"
       },
       disclaimer: {
-        title: "अस्वीकरण",
-        text: "यह प्लेटफ़ॉर्म एक प्रोटोटाइप (MVP) है जो विवेकपूर्ण रिपोर्टिंग और कानूनी जागरूकता की अवधारणा को प्रदर्शित करने के लिए बनाया गया है। दिखाए गए सभी डेटा, फॉर्म और संपर्क केवल शैक्षिक उद्देश्यों के लिए सिमुलेटेड हैं। कोई भी वास्तविक रिपोर्ट संग्रहीत, साझा या प्रसारित नहीं की जाती है। हमारा इरादा विशुद्ध रूप से शिक्षित करना, प्रेरित करना और सशक्त बनाना है।"
+        title: "महत्वपूर्ण नोट",
+        text: "यह प्लेटफ़ॉर्म विवेकपूर्ण रिपोर्टिंग और कानूनी जागरूकता को प्रदर्शित करने के लिए बनाया गया एक प्रोटोटाइप है। दिखाया गया सभी डेटा केवल शैक्षिक उद्देश्यों के लिए सिमुलेटेड है।"
       },
       botMessages: [
         "नमस्ते! मैं इस प्लेटफ़ॉर्म को सुरक्षित रूप से नेविगेट करने में आपकी मदद के लिए यहाँ हूँ।",
@@ -172,13 +146,13 @@ export default function About() {
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },
     animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.6 }
+    transition: { duration: 0.8 }
   };
 
   const staggerContainer = {
     animate: {
       transition: {
-        staggerChildren: 0.1
+        staggerChildren: 0.2
       }
     }
   };
@@ -186,7 +160,7 @@ export default function About() {
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
 
         * {
           margin: 0;
@@ -195,218 +169,254 @@ export default function About() {
         }
 
         body {
-          font-family: 'Poppins', sans-serif;
+          font-family: 'Montserrat', sans-serif;
           overflow-x: hidden;
         }
 
         .about-page {
           min-height: 100vh;
-          background: linear-gradient(135deg, #faf5ff 0%, #fce7f3 50%, #fff7ed 100%);
+          background: #faf5ff;
         }
 
         /* Hero Section */
-        .about-hero {
-          padding: 6rem 5%;
-          max-width: 1400px;
-          margin: 0 auto;
-          text-align: center;
+        .hero-section {
+          min-height: 90vh;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 0;
+          background: linear-gradient(135deg, #fce7f3 0%, #fff7ed 100%);
+          position: relative;
         }
 
-        .about-hero h1 {
-          font-size: 3.5rem;
-          font-weight: 700;
-          color: #581c87;
-          margin-bottom: 1rem;
+        .hero-content {
+          padding: 8rem 5% 4rem 8%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
         }
 
-        .about-tagline {
-          font-size: 1.5rem;
-          color: #ec4899;
+        .hero-subtitle {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.75rem;
+          letter-spacing: 3px;
+          color: #9333ea;
           font-weight: 500;
-        }
-
-        /* Intro Section */
-        .intro-section {
-          padding: 4rem 5%;
-          max-width: 1200px;
-          margin: 0 auto;
-          background: white;
-          border-radius: 30px;
-          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
-        }
-
-        .intro-section h2 {
-          font-size: 2.5rem;
-          font-weight: 700;
-          color: #581c87;
           margin-bottom: 1.5rem;
+        }
+
+        .hero-title {
+          font-family: 'Cormorant Garamond', serif;
+          font-size: 3.5rem;
+          font-weight: 300;
+          color: #581c87;
+          line-height: 1.3;
+          margin-bottom: 2rem;
+        }
+
+        .hero-tagline {
+          font-family: 'Cormorant Garamond', serif;
+          font-size: 2rem;
+          font-style: italic;
+          color: #ec4899;
+          margin-bottom: 3rem;
+          font-weight: 300;
+        }
+
+        .hero-cta {
+          width: fit-content;
+          padding: 1rem 2.5rem;
+          background: linear-gradient(90deg, #ec4899, #9333ea);
+          color: white;
+          border: none;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.9rem;
+          letter-spacing: 1px;
+          cursor: pointer;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          box-shadow: 0 10px 30px rgba(236, 72, 153, 0.3);
+        }
+
+        .hero-cta:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 15px 40px rgba(236, 72, 153, 0.4);
+        }
+
+        .hero-image {
+          position: relative;
+          overflow: hidden;
+        }
+
+        .hero-image img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        /* Elevate Section */
+        .elevate-section {
+          padding: 6rem 0;
           text-align: center;
+          background: linear-gradient(135deg, #fce7f3, #fef3c7);
+          position: relative;
         }
 
-        .intro-section p {
-          font-size: 1.1rem;
-          color: #6b7280;
-          line-height: 1.8;
-          text-align: justify;
+        .elevate-title {
+          font-family: 'Cormorant Garamond', serif;
+          font-size: 3rem;
+          font-weight: 300;
+          color: #581c87;
+          letter-spacing: 2px;
         }
 
-        /* Purpose Section */
-        .purpose-section {
-          padding: 6rem 5%;
-          max-width: 1400px;
-          margin: 0 auto;
+        .sparkle-icon {
+          color: #ec4899;
+          margin: 2rem auto;
         }
 
-        .section-header {
-          text-align: center;
-          margin-bottom: 4rem;
+        /* Welcome Section */
+        .welcome-section {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 0;
+          background: #fff;
+          align-items: center;
         }
 
-        .section-title {
+        .welcome-image {
+          height: 600px;
+        }
+
+        .welcome-image img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .welcome-content {
+          padding: 4rem 8% 4rem 5%;
+        }
+
+        .welcome-title {
+          font-family: 'Cormorant Garamond', serif;
           font-size: 2.5rem;
-          font-weight: 700;
+          font-weight: 300;
           color: #ec4899;
           margin-bottom: 1rem;
         }
 
-        .section-subtitle {
-          font-size: 1.2rem;
-          color: #6b7280;
-        }
-
-        .purpose-grid {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 2rem;
-        }
-
-        .purpose-card {
-          background: white;
-          padding: 2.5rem;
-          border-radius: 20px;
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-          border-left: 5px solid #9333ea;
-          transition: transform 0.3s ease;
-        }
-
-        .purpose-card:hover {
-          transform: translateY(-5px);
-        }
-
-        .purpose-card p {
-          font-size: 1rem;
-          color: #374151;
-          line-height: 1.8;
-        }
-
-        /* Help Section */
-        .help-section {
-          padding: 6rem 5%;
-          background: linear-gradient(135deg, #fce7f3, #fef3c7);
-        }
-
-        .help-grid {
-          max-width: 1400px;
-          margin: 0 auto;
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 2rem;
-          margin-top: 3rem;
-        }
-
-        .help-card {
-          background: white;
-          padding: 2.5rem;
-          border-radius: 20px;
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-          text-align: center;
-        }
-
-        .help-card:nth-child(1) {
-          background: linear-gradient(135deg, #fef3c7, #fde68a);
-        }
-
-        .help-card:nth-child(2) {
-          background: linear-gradient(135deg, #fce7f3, #fbcfe8);
-        }
-
-        .help-card:nth-child(3) {
-          background: linear-gradient(135deg, #ddd6fe, #c4b5fd);
-        }
-
-        .help-card:nth-child(4) {
-          background: linear-gradient(135deg, #dbeafe, #bfdbfe);
-        }
-
-        .help-icon {
-          font-size: 4rem;
-          margin-bottom: 1.5rem;
-        }
-
-        .help-card h3 {
-          font-size: 1.5rem;
-          font-weight: 700;
-          color: #581c87;
-          margin-bottom: 1rem;
-        }
-
-        .help-card p {
-          font-size: 1rem;
-          color: #6b7280;
-          line-height: 1.6;
-        }
-
-        /* Matters Section */
-        .matters-section {
-          padding: 6rem 5%;
-          max-width: 1200px;
-          margin: 0 auto;
-        }
-
-        .matters-content {
-          background: white;
-          padding: 4rem;
-          border-radius: 30px;
-          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
-          text-align: center;
-        }
-
-        .matters-content h2 {
-          font-size: 2.5rem;
-          font-weight: 700;
+        .welcome-subtitle {
+          font-family: 'Cormorant Garamond', serif;
+          font-size: 1.8rem;
+          font-style: italic;
           color: #581c87;
           margin-bottom: 2rem;
         }
 
-        .matters-content p {
-          font-size: 1.1rem;
+        .welcome-text {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.95rem;
+          line-height: 1.9;
           color: #6b7280;
-          line-height: 1.8;
           text-align: justify;
+        }
+
+        .welcome-cta {
+          margin-top: 2.5rem;
+          padding: 0.875rem 2rem;
+          background: transparent;
+          border: 2px solid #9333ea;
+          color: #9333ea;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.85rem;
+          letter-spacing: 1px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+
+        .welcome-cta:hover {
+          background: #9333ea;
+          color: white;
+        }
+
+        /* Mission Section */
+        .mission-section {
+          padding: 6rem 5%;
+          background: linear-gradient(135deg, #faf5ff, #fce7f3);
+        }
+
+        .mission-header {
+          text-align: center;
+          margin-bottom: 5rem;
+        }
+
+        .mission-title {
+          font-family: 'Cormorant Garamond', serif;
+          font-size: 3rem;
+          font-weight: 300;
+          color: #581c87;
+          margin-bottom: 1rem;
+        }
+
+        .mission-subtitle {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.9rem;
+          letter-spacing: 2px;
+          color: #9333ea;
+        }
+
+        .mission-grid {
+          max-width: 1200px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 3rem;
+        }
+
+        .mission-card {
+          background: white;
+          padding: 3rem;
+          border-radius: 0;
+          box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .mission-card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+        }
+
+        .mission-card-title {
+          font-family: 'Cormorant Garamond', serif;
+          font-size: 1.8rem;
+          font-weight: 500;
+          color: #ec4899;
+          margin-bottom: 1.5rem;
+        }
+
+        .mission-card-text {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.95rem;
+          line-height: 1.8;
+          color: #6b7280;
         }
 
         /* Vision Section */
         .vision-section {
           padding: 6rem 5%;
-          background: linear-gradient(90deg, #ec4899, #9333ea);
+          background: linear-gradient(90deg, #9333ea, #ec4899);
           color: white;
-        }
-
-        .vision-content {
-          max-width: 1200px;
-          margin: 0 auto;
           text-align: center;
         }
 
-        .vision-content h2 {
-          font-size: 2.5rem;
-          font-weight: 700;
-          margin-bottom: 1rem;
+        .vision-container {
+          max-width: 1000px;
+          margin: 0 auto;
         }
 
-        .vision-content .section-subtitle {
-          font-size: 1.2rem;
-          color: rgba(255, 255, 255, 0.9);
+        .vision-title {
+          font-family: 'Cormorant Garamond', serif;
+          font-size: 3rem;
+          font-weight: 300;
           margin-bottom: 3rem;
         }
 
@@ -418,51 +428,51 @@ export default function About() {
         }
 
         .vision-point {
-          background: rgba(255, 255, 255, 0.2);
+          background: rgba(255, 255, 255, 0.15);
           backdrop-filter: blur(10px);
           padding: 2rem;
-          border-radius: 20px;
           border: 2px solid rgba(255, 255, 255, 0.3);
         }
 
-        .vision-point-icon {
-          font-size: 3rem;
+        .vision-icon {
+          font-size: 2.5rem;
           margin-bottom: 1rem;
         }
 
         .vision-point p {
-          font-size: 1.1rem;
-          font-weight: 600;
-          margin: 0;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.95rem;
+          line-height: 1.6;
         }
 
         .vision-closing {
-          font-size: 1.2rem;
+          font-family: 'Cormorant Garamond', serif;
+          font-size: 1.3rem;
+          font-style: italic;
           line-height: 1.8;
           background: rgba(255, 255, 255, 0.1);
-          padding: 2rem;
-          border-radius: 15px;
+          padding: 2rem 3rem;
           border: 2px solid rgba(255, 255, 255, 0.2);
         }
 
         /* Disclaimer Section */
         .disclaimer-section {
           padding: 4rem 5%;
-          max-width: 1200px;
-          margin: 0 auto;
+          background: linear-gradient(135deg, #fef3c7, #fed7aa);
         }
 
         .disclaimer-content {
-          background: linear-gradient(135deg, #fef3c7, #fed7aa);
+          max-width: 900px;
+          margin: 0 auto;
+          background: white;
           padding: 3rem;
-          border-radius: 20px;
           border: 3px solid #f59e0b;
           box-shadow: 0 10px 30px rgba(245, 158, 11, 0.2);
         }
 
-        .disclaimer-content h2 {
+        .disclaimer-title {
+          font-family: 'Cormorant Garamond', serif;
           font-size: 2rem;
-          font-weight: 700;
           color: #92400e;
           margin-bottom: 1.5rem;
           display: flex;
@@ -470,8 +480,9 @@ export default function About() {
           gap: 1rem;
         }
 
-        .disclaimer-content p {
-          font-size: 1rem;
+        .disclaimer-text {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.95rem;
           color: #78350f;
           line-height: 1.8;
         }
@@ -511,6 +522,8 @@ export default function About() {
         .bot-speech-bubble p {
           margin: 0 0 1rem 0;
           color: #374151;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.9rem;
         }
 
         .bot-speech-bubble p:last-child {
@@ -530,6 +543,7 @@ export default function About() {
           font-weight: 600;
           cursor: pointer;
           transition: all 0.3s;
+          font-family: 'Montserrat', sans-serif;
         }
 
         .english-btn {
@@ -563,33 +577,36 @@ export default function About() {
 
         /* Responsive */
         @media (max-width: 1024px) {
-          .purpose-grid,
-          .help-grid {
+          .hero-section,
+          .welcome-section {
             grid-template-columns: 1fr;
           }
 
+          .hero-image,
+          .welcome-image {
+            height: 400px;
+          }
+
+          .mission-grid,
           .vision-points {
             grid-template-columns: 1fr;
           }
         }
 
         @media (max-width: 768px) {
-          .about-hero h1 {
+          .hero-content,
+          .welcome-content {
+            padding: 4rem 5%;
+          }
+
+          .hero-title {
             font-size: 2.5rem;
           }
 
-          .about-tagline {
-            font-size: 1.2rem;
-          }
-
-          .section-title {
+          .elevate-title,
+          .mission-title,
+          .vision-title {
             font-size: 2rem;
-          }
-
-          .intro-section,
-          .matters-content,
-          .disclaimer-content {
-            padding: 2rem;
           }
 
           .language-bot {
@@ -606,110 +623,106 @@ export default function About() {
       <div className="about-page">
         {/* Hero Section */}
         <motion.div 
-          className="about-hero"
+          className="hero-section"
           initial="initial"
           animate="animate"
           variants={staggerContainer}
         >
-          <motion.h1 variants={fadeInUp}>{currentContent.hero.title}</motion.h1>
-          <motion.p className="about-tagline" variants={fadeInUp}>
-            {currentContent.hero.tagline}
-          </motion.p>
+          <motion.div className="hero-content" variants={fadeInUp}>
+            <div className="hero-subtitle">{currentContent.hero.subtitle}</div>
+            <h1 className="hero-title">{currentContent.hero.title}</h1>
+            <div className="hero-tagline">{currentContent.hero.tagline}</div>
+            <button className="hero-cta">{currentContent.hero.cta}</button>
+          </motion.div>
+          <motion.div 
+            className="hero-image"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <img src="/down7.jpg" alt="Empowered Woman" />
+          </motion.div>
         </motion.div>
 
-        {/* Intro Section */}
+        {/* Elevate Section */}
         <motion.div 
-          className="intro-section"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          className="elevate-section"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.8 }}
         >
-          <h2>{currentContent.intro.title}</h2>
-          <p>{currentContent.intro.text}</p>
+          <h2 className="elevate-title">{currentContent.elevate.title}</h2>
+          <Sparkles className="sparkle-icon" size={40} />
         </motion.div>
 
-        {/* Purpose Section */}
-        <div className="purpose-section">
-          <div className="section-header">
-            <h2 className="section-title">{currentContent.purpose.title}</h2>
-            <p className="section-subtitle">{currentContent.purpose.subtitle}</p>
-          </div>
-
+        {/* Welcome Section */}
+        <motion.div 
+          className="welcome-section"
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          variants={staggerContainer}
+        >
           <motion.div 
-            className="purpose-grid"
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            variants={staggerContainer}
+            className="welcome-image"
+            variants={fadeInUp}
           >
-            {currentContent.purpose.points.map((point, idx) => (
-              <motion.div 
-                key={idx}
-                className="purpose-card"
-                variants={fadeInUp}
-              >
-                <p>{point}</p>
-              </motion.div>
-            ))}
+            <img src="/down5.jpg" alt="Welcome" />
           </motion.div>
-        </div>
-
-        {/* How We Help Section */}
-        <div className="help-section">
-          <div className="section-header">
-            <h2 className="section-title">{currentContent.help.title}</h2>
-            <p className="section-subtitle">{currentContent.help.subtitle}</p>
-          </div>
-
-          <motion.div 
-            className="help-grid"
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-          >
-            {currentContent.help.items.map((item, idx) => (
-              <motion.div 
-                key={idx}
-                className="help-card"
-                variants={fadeInUp}
-              >
-                <div className="help-icon">{item.icon}</div>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-              </motion.div>
-            ))}
+          <motion.div className="welcome-content" variants={fadeInUp}>
+            <h3 className="welcome-title">{currentContent.welcome.title}</h3>
+            <h2 className="welcome-subtitle">{currentContent.welcome.subtitle}</h2>
+            <p className="welcome-text">{currentContent.welcome.text}</p>
+            <button className="welcome-cta">{currentContent.hero.cta}</button>
           </motion.div>
-        </div>
+        </motion.div>
 
-        {/* Why It Matters Section */}
-        <div className="matters-section">
+        {/* Mission Section */}
+        <div className="mission-section">
           <motion.div 
-            className="matters-content"
-            initial={{ opacity: 0, y: 50 }}
+            className="mission-header"
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2>{currentContent.matters.title}</h2>
-            <p>{currentContent.matters.text}</p>
+            <h2 className="mission-title">{currentContent.mission.title}</h2>
+            <div className="mission-subtitle">{currentContent.mission.subtitle}</div>
+          </motion.div>
+
+          <motion.div 
+            className="mission-grid"
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+          >
+            {currentContent.mission.items.map((item, idx) => (
+              <motion.div 
+                key={idx}
+                className="mission-card"
+                variants={fadeInUp}
+              >
+                <h3 className="mission-card-title">{item.title}</h3>
+                <p className="mission-card-text">{item.text}</p>
+              </motion.div>
+            ))}
           </motion.div>
         </div>
 
         {/* Vision Section */}
         <div className="vision-section">
           <motion.div 
-            className="vision-content"
+            className="vision-container"
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
             variants={staggerContainer}
           >
-            <motion.h2 variants={fadeInUp}>{currentContent.vision.title}</motion.h2>
-            <motion.p className="section-subtitle" variants={fadeInUp}>
-              {currentContent.vision.subtitle}
-            </motion.p>
+            <motion.h2 className="vision-title" variants={fadeInUp}>
+              {currentContent.vision.title}
+            </motion.h2>
 
             <motion.div className="vision-points" variants={staggerContainer}>
               {currentContent.vision.points.map((point, idx) => (
@@ -718,7 +731,7 @@ export default function About() {
                   className="vision-point"
                   variants={fadeInUp}
                 >
-                  <div className="vision-point-icon">
+                  <div className="vision-icon">
                     {idx === 0 ? '✨' : idx === 1 ? '🗣️' : '⚖️'}
                   </div>
                   <p>{point}</p>
@@ -726,9 +739,9 @@ export default function About() {
               ))}
             </motion.div>
 
-            <motion.p className="vision-closing" variants={fadeInUp}>
+            <motion.div className="vision-closing" variants={fadeInUp}>
               {currentContent.vision.closing}
-            </motion.p>
+            </motion.div>
           </motion.div>
         </div>
 
@@ -741,11 +754,11 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2>
+            <h2 className="disclaimer-title">
               <AlertCircle size={32} />
               {currentContent.disclaimer.title}
             </h2>
-            <p>{currentContent.disclaimer.text}</p>
+            <p className="disclaimer-text">{currentContent.disclaimer.text}</p>
           </motion.div>
         </div>
       </div>

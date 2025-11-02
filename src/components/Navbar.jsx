@@ -33,6 +33,9 @@ export default function Navbar() {
           <NavLink to="/about" className={({isActive}) => isActive ? "nav-link active" : "nav-link"}>
             <Info size={16} /> About
           </NavLink>
+          <NavLink to="/stories" className={({isActive}) => isActive ? "nav-link active" : "nav-link"}>
+            <Info size={16} /> Stories
+          </NavLink>
         </nav>
       </div>
     </header>

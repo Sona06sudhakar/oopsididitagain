@@ -7,7 +7,7 @@ import MyRights from "./pages/MyRights";
 import FindHelp from "./pages/FindHelp";
 import SafetyTips from "./pages/SafetyTips";
 import About from "./pages/About";
-
+import Stories from "./pages/Stories";
 function App() {
   return (
     <Router>
@@ -21,6 +21,7 @@ function App() {
             <Route path="/help" element={<FindHelp />} />
             <Route path="/tips" element={<SafetyTips />} />
             <Route path="/about" element={<About />} />
+            <Route path="/stories" element={<Stories />} />
           </Routes>
         </main>
 
