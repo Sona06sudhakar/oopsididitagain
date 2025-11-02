@@ -1,6 +1,88 @@
 import React, { useState } from 'react';
 import { Shield, Phone, MapPin, Book, Lightbulb, Info, Menu, X, AlertCircle, Heart, Users, FileText, Search, MessageCircle } from 'lucide-react';
 
+// Inline styles for animations and effects
+const styles = `
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+  @keyframes shimmer {
+    0% { background-position: -1000px 0; }
+    100% { background-position: 1000px 0; }
+  }
+  @keyframes glow {
+    0%, 100% { box-shadow: 0 0 20px rgba(147, 51, 234, 0.5); }
+    50% { box-shadow: 0 0 40px rgba(147, 51, 234, 0.8); }
+  }
+  @keyframes slideDown {
+    from { opacity: 0; max-height: 0; }
+    to { opacity: 1; max-height: 500px; }
+  }
+  @keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .animate-fade-in { animation: fadeIn 0.6s ease-out; }
+  .animate-slide-in { animation: slideIn 0.5s ease-out; }
+  .animate-float { animation: float 3s ease-in-out infinite; }
+  .animate-pulse-slow { animation: pulse 2s ease-in-out infinite; }
+  .animate-glow { animation: glow 2s ease-in-out infinite; }
+  .animate-slide-down { animation: slideDown 0.3s ease-out; }
+  .animate-gradient { 
+    background-size: 200% 200%;
+    animation: gradientShift 8s ease infinite;
+  }
+  .card-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .card-hover:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  }
+  .glass {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .glow-purple {
+    box-shadow: 0 0 30px rgba(147, 51, 234, 0.6);
+  }
+  .glow-pink {
+    box-shadow: 0 0 30px rgba(236, 72, 153, 0.6);
+  }
+  .glow-red {
+    box-shadow: 0 0 30px rgba(220, 38, 38, 0.6);
+  }
+  html { scroll-behavior: smooth; }
+  ::-webkit-scrollbar { width: 12px; }
+  ::-webkit-scrollbar-track { background: #f1f1f1; }
+  ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #9333ea, #ec4899); border-radius: 6px; }
+  ::-webkit-scrollbar-thumb:hover { background: linear-gradient(180deg, #7e22ce, #db2777); }
+  button:active { transform: scale(0.95); }
+  *:focus-visible { outline: 2px solid #9333ea; outline-offset: 2px; border-radius: 4px; }
+`;
+
 // Main App Component
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
