@@ -1,61 +1,63 @@
-# HerVoice – Women's Support & Empowerment Platform
+# Nari Suraksha Saathi
 
 ## Project Overview
 
-HerVoice is a web platform created during the HackVerse Hackathon with the goal of providing women with a safe, supportive, and informative online space.
+Nari Suraksha Saathi is a web-based platform developed during the HackVerse Hackathon to promote women's safety, awareness, and access to support resources.
 
-The platform was designed to encourage women facing personal, social, professional, or emotional challenges to seek help, share experiences, and connect with stories from women around the world who have overcome similar situations.
+The platform was designed as a prototype that encourages women facing difficult situations to seek help, understand their rights, access emergency contacts, and learn important safety information.
 
-Our team developed this project during the hackathon and was recognized with a Certificate of Excellence for our participation and innovation.
-
----
-
-## Problem Statement
-
-Many women facing difficult situations often hesitate to seek support due to fear, uncertainty, lack of awareness, or the belief that they are alone in their experiences.
-
-HerVoice aims to address this by:
-
-* Encouraging women to reach out for support
-* Providing inspiring real-life stories
-* Building awareness about available help resources
-* Creating a welcoming and empowering digital environment
+The project focuses on creating an accessible and supportive digital space where users can find guidance and resources related to women's safety and well-being.
 
 ---
 
-## Key Features
+## Features
 
-### Inspirational Stories
+### Report Incident
 
-The platform contains stories and experiences from women across different parts of the world.
+Users can report incidents and share their experiences through a simple reporting interface.
 
-These stories are intended to:
-
-* Inspire confidence
-* Promote resilience
-* Show that challenges can be overcome
-* Encourage users to seek support when needed
+This feature was designed to encourage individuals to speak up and seek support when facing difficult situations.
 
 ---
 
-### Awareness & Support Resources
+### Know Your Rights
 
-The platform highlights:
-
-* The importance of asking for help
-* Mental and emotional well-being
-* Community support networks
-* Personal growth and empowerment
+The platform provides information about women's rights and legal protections, helping users become more aware of the support and protections available to them.
 
 ---
 
-### Safe and Inclusive Environment
+### Find Help
 
-The website was designed to create a positive and supportive atmosphere where women can:
+Users can access information about support services, NGOs, and organizations that may assist women in need.
 
-* Learn from others' experiences
-* Feel represented
-* Find encouragement during difficult situations
+---
+
+### Safety Tips
+
+The platform includes practical safety guidelines and awareness resources aimed at promoting personal safety and informed decision-making.
+
+---
+
+### Emergency Support
+
+Important emergency contact information is made easily accessible, including:
+
+* Police Helpline
+* Women's Helpline
+
+This ensures users can quickly find assistance when required.
+
+---
+
+## Objective
+
+The primary goal of Nari Suraksha Saathi is to:
+
+* Promote women's safety awareness
+* Encourage reporting and help-seeking behavior
+* Increase awareness of legal rights
+* Provide access to support resources
+* Demonstrate how technology can be used for social impact
 
 ---
 
@@ -66,9 +68,13 @@ This project was developed during the HackVerse Hackathon.
 Achievements:
 
 * Competed against 12 participating teams
-* Secured 1st place in the hackathon quiz competition
+* Won 1st place in the hackathon quiz competition
 * Received a Certificate of Excellence for innovation and participation
-* Awarded six months of complimentary access to an AI platform as part of the competition rewards
+* Awarded six months of complimentary access to an AI platform
+
+### Team Recognition
+
+Each member of Team Oops I Did It Again received an individual Certificate of Excellence. The certificate displayed in this repository is one of the certificates awarded to a team member.
 
 ---
 
@@ -94,42 +100,28 @@ Achievements:
 
 ---
 
-## Project Goals
+## Future Improvements
 
-The primary objectives of HerVoice were:
+Potential future enhancements include:
 
-* Promote awareness and support for women facing challenges
-* Encourage communication and help-seeking behavior
-* Create a platform for sharing inspiring experiences
-* Demonstrate web development and database design skills within a hackathon environment
-
----
-
-## Future Enhancements
-
-Potential future improvements include:
-
-* Anonymous support forums
-* Professional counseling resources
-* Community discussion spaces
-* Location-based support services
-* Emergency assistance contacts
-* AI-powered guidance and resource recommendations
-* Multi-language support
+* Anonymous reporting system
+* Secure user authentication
+* Integration with verified support organizations
+* Real-time emergency assistance features
+* Community support resources
+* Mobile-responsive improvements
 
 ---
 
-## Team Recognition
+## Disclaimer
 
-HerVoice was created as part of the HackVerse Hackathon and received recognition for its innovative approach toward women's empowerment and support.
-
-The project reflects our commitment to using technology to create meaningful social impact while developing practical web-based solutions.
+This project was created as a hackathon prototype for educational and demonstration purposes. The platform was designed to showcase concepts related to women's safety awareness, support accessibility, and social-impact web development.
 
 
 ## Recognition
 
 - Participated in HackVerse Hackathon
-- Competed against 12 teams
+- Competed against 50+ teams. Got into the top 12 teams
 - Won 1st place in the hackathon quiz challenge
 - Received a Certificate of Excellence for innovation and participation
 - Awarded 6 months of complimentary access to an AI platform
